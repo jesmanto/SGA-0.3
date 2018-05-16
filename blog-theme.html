@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jesse's official blog site</title>
+  <link href="normalize.css" rel="stylesheet">
+  <style>
+    header{
+        background:url("https://i.imgur.com/4iOiwHx.jpg");
+        background-size:cover;
+        background-position:center;
+        text-align:center;
+      }
+    img{
+        margin:50px 0px 0px 0px;
+        border:1px solid #fff;
+        border-radius:100%
+      }
+    h1{
+        font-size:70px
+      }
+    ul{
+        padding:10px;
+        background:rgba(255,255,255,0.3);
+        font-family:Cursive;
+        text-align:right;
+      }
+    li{
+        display:inline;
+        padding:0px 10px 0px 10px;
+      }
+    a{color:#000;}
+    article{
+        padding:20px;
+        margin:0 auto;
+        max-width:500px;
+      }
+    p{
+        font-family:"UWR Chancery L", Cursive;
+      }
+    button{
+        background:blue;
+        color:white;
+        border:0;
+        padding:0px 20px;
+        font-size:20px;
+        font-family:"Times New Roman", Cursive;
+      }
+    @media(max-width:500px){
+        ul{
+            text-align:center;
+          }
+        li{
+            display:block;
+          }
+        h1{
+            font-size:36px;
+          }
+      }
+  </style>
+</head>
+<body>
+    <header>
+      <img src="https://i.imgur.com/zaGyreFt.png">
+      <h1>Jesse's Agro Blog</h1>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Promotions</a></li>
+        <li><a href="#">Downloads</a></li>
+      </ul>
+    </header>
+    <article><h2>Female participation in African agricultural research and higher education: New insights</h2>
+    <p>Female farmers play a vital role in African agriculture, accounting for the majority of the agricultural workforce. However, agricultural research and higher education are disproportionately led by men. There is an urgent need for greater representation of women in the field of agricultural science and technology (S&T) in Sub-Saharan Africa. Female scientists, professors, and senior managers offer different insights and perspectives to help research institutes to more fully address the unique and pressing challenges of both female and male farmers in the region. Gender-disaggregated data on S&T capacity are scarce, often lack sufficient detail, and focus more generally on S&T rather than on agriculture specifically.</p><button>Like</button></article>
+    
+    <article><h2>The Agricultural Society of Nigeria (ASN)</h2>
+    <p>The Agricultural Society of Nigeria (ASN) is one of the oldest agriculturally based Societies established in 1962 by the pioneer staff of the Faculty of Agriculture, University of Ibadan, Nigeria. The objects of the Society among others are to foster the pursuit and understanding of both basic and applied agricultural science in Nigeria, to disseminate agricultural knowledge by various publications.
+This includes a Journal of Agriculture, and the organization of agricultural shows, symposia, seminars, lectures, conferences, etc; to promote the interest of agricultural scientists, farmers and all those connected with the agriculture industry, and to be in close collaboration with societies having related objects both in Nigeria and other parts of the world. Membership is drawn from all agricultural professionals from Faculty of Agriculture in the Universities, Colleges of Agriculture, Research Institutes, Federal Department of Agriculture, state Ministries of Agriculture and Agricultural Development Programmes. The Society holds annual conference on rotatory basis which provides opportunity for peer review of oral paper/poster presentation and interaction on current trends in agriculture among major stake holders. Regular publications of the Society include Annual Conference proceeding, Nigerian Agricultural Journal and Newsletter . The Society is governed by the National Executive Council with the President as the Chairman.</p><button>Like</button></article>
+    
+    <article><h2>The Fertilizer Suppliers Association of Nigeria ((FEPSAN)</h2>
+    <p>The Fertilizer Suppliers Association of Nigeria ((FEPSAN) is a national trade association of fertilizer manufacturers, importers, blending plants and major distributors and dealers in Nigeria. The association was set up to represent the needs and interests of fertilizer manufacturers, suppliers, distributors and dealers in Nigeria. The Association was launched in Abuja in February 2004. Its membership is open to all registered companies under the Nigerian laws dealing with manufacturing, importation, blending, and distribution of good quality fertilizers. Other related bodies/organizations or individuals may be considered as affiliate members</p><button>Like</button></article>
+  <script>
+    $("a").hover(function(){
+      $(this).css("color","white");
+      }
+    );
+    $("button").on("click",function(){
+      alert("Thanks for the gesture");
+    });
+  </script>  
+</body>
+</html>
