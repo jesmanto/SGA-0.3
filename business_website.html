@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<head>
+<script src="/assets/jquery.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<style>
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: rgba(50,20,53);
+}
+div {
+  height: 200px;
+  background-size: cover;
+  background-position:center;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'Bungee Inline', cursive;
+  text-align: center;
+  font-size: 65px;
+  line-height:55px;
+  color: #aaaaaa;
+  margin: 60px 0 20px 0;
+}
+h2 {
+  text-align: center;
+  color: #bbbbbb;
+  margin: 0px 0 70px 0;
+}
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,25,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,25,0,1), rgba(0,25,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,25,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+  opacity: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.first{
+  background-image: url("https://i.imgur.com/IcYAZN4.jpg?1");
+}
+.second{
+  background-image: url("https://i.imgur.com/lQdwpaz.jpg");
+}
+.dessert{
+  background-image: url("https://i.imgur.com/VDNbSeG.jpg");
+}
+.price {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 30px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+    line-height:30px;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 14px;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>CEONOURISH AGRO COMPANY</h1>
+<h2>...redefining agriculture in Africa</h2>
+<div class="first">
+  <p>Full Prepared Fresh Chicken <span class="price">$14</span><br />
+  <small>For our customers who may not like to buy the live chicken, we have made available for you an already prepared full chicken. All you just need to do is to buy and cook. Our prepared products are refridgerated.</small></p>
+</div>
+
+<div class="second">
+  <p>Chicken Laps <span class="price">$22</span><br />
+  <small>We have chicken laps of different sizes and they are gotten from the best species of chickens. We sell at minimum quantity of 1kg. Customers buying more than 10kg are entitled to free home delivery. </small></p>
+</div>
+  
+<div class="dessert">
+  <p>Smoked Catfish <span class="price">$8</span><br />
+  <small>Our fishes are smoked with the best smoking method that ensures uniform color all over the fishes thereby retaining the nutrients of the fish. This is to show oue love and care for our esteemed customers.</small></p>
+</div>
+
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+
+</body>
